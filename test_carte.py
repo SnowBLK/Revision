@@ -1,20 +1,26 @@
-from cmath import pi
+"""Module doctring"""
 from unittest.mock import Mock
 from carte_pizzeria import CartePizzeria
 
-def test_isEmpty() :
+
+def test_is_empty():
+    """is_empty docstring"""
     carte = CartePizzeria()
     carte.pizza = []
     assert carte.is_empty()
 
-def test_nbPizzas() :
+
+def test_nb_pizzas():
+    """nb_pizza docstring"""
     pizza = Mock()
     pizza2 = Mock()
     carte = CartePizzeria()
     carte.pizza = [pizza, pizza2]
     assert carte.nb_pizzas() == 2
 
-def test_addPizza():
+
+def test_add_pizza():
+    """add_pizza docstring"""
     pizza = Mock()
     carte = CartePizzeria()
 
@@ -23,7 +29,9 @@ def test_addPizza():
 
     assert carte.pizza == [pizza]
 
-def test_removePizza():
+
+def test_remove_pizza():
+    """remove_pizza docstring"""
     pizza1 = Mock()
     pizza2 = Mock()
 
